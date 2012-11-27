@@ -17,7 +17,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    iOSGame *funIOSGame = (iOSGame*)[GameFactory createNewGameOfType:IOS];
+    
+    if (funIOSGame != nil) {
+        [funIOSGame calculateGameAwesomeness];
+    }
+
 }
 
 - (void)didReceiveMemoryWarning

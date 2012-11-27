@@ -10,4 +10,7 @@
 
 @interface iOSGame : BaseGame
 
+@property (nonatomic) double iOSVersion;
+@property (nonatomic) BOOL usesAccelerometer;
+
 @end

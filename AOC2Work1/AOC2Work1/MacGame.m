@@ -9,5 +9,6 @@
 #import "MacGame.h"
 
 @implementation MacGame
+// I would @synthesize here but there is no longer a need because the compiler creates the _variable for me.
 
 @end

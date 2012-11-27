@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GameFactory.h"
 
 @interface ViewController : UIViewController
 

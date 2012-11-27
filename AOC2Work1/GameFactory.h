@@ -7,10 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-@class BaseGame;
-@class iOSGame;
-@class AndroidGame;
-@class MacGame;
+#import "BaseGame.h"
+#import "iOSGame.h"
+#import "AndroidGame.h"
+#import "MacGame.h"
 
 @interface GameFactory : NSObject
 

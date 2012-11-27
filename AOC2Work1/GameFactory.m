@@ -7,10 +7,6 @@
 //
 
 #import "GameFactory.h"
-#import "BaseGame.h"
-#import "iOSGame.h"
-#import "AndroidGame.h"
-#import "MacGame.h"
 
 @implementation GameFactory
 

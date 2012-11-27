@@ -10,4 +10,7 @@
 
 @interface AndroidGame : BaseGame
 
+@property (nonatomic) double androidVersion;
+@property (nonatomic) BOOL doesItWork;
+
 @end

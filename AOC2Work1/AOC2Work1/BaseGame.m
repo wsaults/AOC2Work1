@@ -9,9 +9,7 @@
 #import "BaseGame.h"
 
 @implementation BaseGame
-
-// I would @synthesize here but there is no longer a need.
-// The compiler creates the _variable for me.
+// I would @synthesize here but there is no longer a need because the compiler creates the _variable for me.
 
 
 -(id)init {
@@ -29,7 +27,7 @@
     NSLog(@"Game Title %@", _gameTitle);
     NSLog(@"Game Rating %i", _gameRating);
     NSLog(@"Number of your friends that own this game %i", _numberOfYourFriendsThatOwnThisGame);
-    NSLog(@"Is it multi player? %@", (_isMultiPlayer) ? @"NO" : @"YES");
+    NSLog(@"Is it multi player? %@", (_isMultiPlayer) ? @"YES" : @"NO");
 }
 
 @end
