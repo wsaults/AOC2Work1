@@ -10,4 +10,26 @@
 
 @implementation BaseGame
 
+// I would @synthesize here but there is no longer a need.
+// The compiler creates the _variable for me.
+
+
+-(id)init {
+    self = [super init];
+    if (self != nil) {
+        [self setGameTitle:nil];
+        [self setGameRating:0];
+        [self setNumberOfYourFriendsThatOwnThisGame:0];
+        [self setIsMultiPlayer:NO];
+    }
+    return self;
+}
+
+-(void)calculateGameAwesomeness {
+    NSLog(@"Game Title %@", _gameTitle);
+    NSLog(@"Game Rating %i", _gameRating);
+    NSLog(@"Number of your friends that own this game %i", _numberOfYourFriendsThatOwnThisGame);
+    NSLog(@"Is it multi player? %@", (_isMultiPlayer) ? @"NO" : @"YES");
+}
+
 @end
