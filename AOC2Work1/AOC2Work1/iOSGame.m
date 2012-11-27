@@ -26,7 +26,8 @@
 }
 
 -(void)calculateGameAwesomeness {
-    NSLog(@"iOS Version %f", _iOSVersion);
+    [super calculateGameAwesomeness];
+    NSLog(@"iOS Version: %f", _iOSVersion);
     NSLog(@"Uses accelerometer? %@", (_usesAccelerometer) ? @"YES" : @"NO");
 }
 

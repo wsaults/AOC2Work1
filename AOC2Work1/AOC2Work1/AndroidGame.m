@@ -26,7 +26,8 @@
 }
 
 -(void)calculateGameAwesomeness {
-    NSLog(@"Android Version %f", _androidVersion);
+    [super calculateGameAwesomeness];
+    NSLog(@"Android Version: %f", _androidVersion);
     NSLog(@"Uses accelerometer? %@", (_doesItWork) ? @"YES" : @"NO");
 }
 

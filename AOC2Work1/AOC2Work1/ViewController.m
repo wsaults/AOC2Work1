@@ -18,9 +18,14 @@
 {
     [super viewDidLoad];
     iOSGame *funIOSGame = (iOSGame*)[GameFactory createNewGameOfType:IOS];
+    AndroidGame *notSoFunAndroidGame = (AndroidGame *)[GameFactory createNewGameOfType:ANDROID];
     
     if (funIOSGame != nil) {
         [funIOSGame calculateGameAwesomeness];
+    }
+    
+    if (notSoFunAndroidGame != nil) {
+        [notSoFunAndroidGame calculateGameAwesomeness];
     }
 
 }

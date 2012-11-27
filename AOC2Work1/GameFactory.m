@@ -11,7 +11,21 @@
 @implementation GameFactory
 
 +(BaseGame *)createNewGameOfType:(NSInteger)gameType {
-    return [iOSGame new];
+    switch (gameType) {
+        case IOS:
+            return [iOSGame new];
+            break;
+        case ANDROID:
+            return [AndroidGame new];
+            break;
+        case MAC:
+            return [MacGame new];
+            break;
+            
+        default:
+            return [iOSGame new];
+            break;
+    }
 }
 
 @end

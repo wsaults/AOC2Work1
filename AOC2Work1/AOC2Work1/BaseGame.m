@@ -24,9 +24,10 @@
 }
 
 -(void)calculateGameAwesomeness {
-    NSLog(@"Game Title %@", _gameTitle);
-    NSLog(@"Game Rating %i", _gameRating);
-    NSLog(@"Number of your friends that own this game %i", _numberOfYourFriendsThatOwnThisGame);
+    NSLog(@"===================================");
+    NSLog(@"Game Title: %@", _gameTitle);
+    NSLog(@"Game Rating: %i", _gameRating);
+    NSLog(@"Number of your friends that own this game: %i", _numberOfYourFriendsThatOwnThisGame);
     NSLog(@"Is it multi player? %@", (_isMultiPlayer) ? @"YES" : @"NO");
 }
 
