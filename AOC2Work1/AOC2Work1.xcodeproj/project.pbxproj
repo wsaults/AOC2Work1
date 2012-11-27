@@ -18,6 +18,11 @@
 		BEF0FA91166457A6000604D1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BEF0FA90166457A6000604D1 /* Default-568h@2x.png */; };
 		BEF0FA94166457A6000604D1 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEF0FA92166457A6000604D1 /* MainStoryboard.storyboard */; };
 		BEF0FA97166457A6000604D1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF0FA96166457A6000604D1 /* ViewController.m */; };
+		BEF0FA9F16645811000604D1 /* GameFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF0FA9E16645811000604D1 /* GameFactory.m */; };
+		BEF0FAA21664582C000604D1 /* BaseGame.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF0FAA11664582C000604D1 /* BaseGame.m */; };
+		BEF0FAA516645846000604D1 /* iOSGame.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF0FAA416645846000604D1 /* iOSGame.m */; };
+		BEF0FAA816645855000604D1 /* AndroidGame.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF0FAA716645855000604D1 /* AndroidGame.m */; };
+		BEF0FAAB16645875000604D1 /* MacGame.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF0FAAA16645875000604D1 /* MacGame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +42,16 @@
 		BEF0FA93166457A6000604D1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		BEF0FA95166457A6000604D1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		BEF0FA96166457A6000604D1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BEF0FA9D16645811000604D1 /* GameFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameFactory.h; path = ../GameFactory.h; sourceTree = "<group>"; };
+		BEF0FA9E16645811000604D1 /* GameFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameFactory.m; path = ../GameFactory.m; sourceTree = "<group>"; };
+		BEF0FAA01664582C000604D1 /* BaseGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseGame.h; sourceTree = "<group>"; };
+		BEF0FAA11664582C000604D1 /* BaseGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseGame.m; sourceTree = "<group>"; };
+		BEF0FAA316645846000604D1 /* iOSGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOSGame.h; sourceTree = "<group>"; };
+		BEF0FAA416645846000604D1 /* iOSGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iOSGame.m; sourceTree = "<group>"; };
+		BEF0FAA616645855000604D1 /* AndroidGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AndroidGame.h; sourceTree = "<group>"; };
+		BEF0FAA716645855000604D1 /* AndroidGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AndroidGame.m; sourceTree = "<group>"; };
+		BEF0FAA916645875000604D1 /* MacGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacGame.h; sourceTree = "<group>"; };
+		BEF0FAAA16645875000604D1 /* MacGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MacGame.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +103,16 @@
 				BEF0FA92166457A6000604D1 /* MainStoryboard.storyboard */,
 				BEF0FA95166457A6000604D1 /* ViewController.h */,
 				BEF0FA96166457A6000604D1 /* ViewController.m */,
+				BEF0FA9D16645811000604D1 /* GameFactory.h */,
+				BEF0FA9E16645811000604D1 /* GameFactory.m */,
+				BEF0FAA01664582C000604D1 /* BaseGame.h */,
+				BEF0FAA11664582C000604D1 /* BaseGame.m */,
+				BEF0FAA316645846000604D1 /* iOSGame.h */,
+				BEF0FAA416645846000604D1 /* iOSGame.m */,
+				BEF0FAA616645855000604D1 /* AndroidGame.h */,
+				BEF0FAA716645855000604D1 /* AndroidGame.m */,
+				BEF0FAA916645875000604D1 /* MacGame.h */,
+				BEF0FAAA16645875000604D1 /* MacGame.m */,
 				BEF0FA81166457A6000604D1 /* Supporting Files */,
 			);
 			path = AOC2Work1;
@@ -176,6 +201,11 @@
 				BEF0FA87166457A6000604D1 /* main.m in Sources */,
 				BEF0FA8B166457A6000604D1 /* AppDelegate.m in Sources */,
 				BEF0FA97166457A6000604D1 /* ViewController.m in Sources */,
+				BEF0FA9F16645811000604D1 /* GameFactory.m in Sources */,
+				BEF0FAA21664582C000604D1 /* BaseGame.m in Sources */,
+				BEF0FAA516645846000604D1 /* iOSGame.m in Sources */,
+				BEF0FAA816645855000604D1 /* AndroidGame.m in Sources */,
+				BEF0FAAB16645875000604D1 /* MacGame.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
