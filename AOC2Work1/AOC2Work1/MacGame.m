@@ -25,9 +25,12 @@
 }
 
 -(NSInteger)calculateGameAwesomenessWithType:(NSInteger)type gameTitle:(NSString *)title gameRating:(NSInteger)rating {
-    NSLog(@"OS: %f", _operatingSystem);
-    NSLog(@"Downloaded from app store? %@", (_isFromAppStore) ? @"YES" : @"NO");
-    return rating;
+    NSInteger ratingToReturn;
+    ratingToReturn = [title length] + [self operatingSystem] + rating;
+    ratingToReturn += ([self isFromAppStore]) ? 1 : 0;
+    ratingToReturn += 25; // Because the platform is Mac :P
+    
+    return ratingToReturn;
 }
 
 @end

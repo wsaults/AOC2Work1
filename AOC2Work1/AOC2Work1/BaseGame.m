@@ -23,7 +23,6 @@
 }
 
 -(NSInteger)calculateGameAwesomenessWithType:(NSInteger)type gameTitle:(NSString *)title gameRating:(NSInteger)rating {
-    NSLog(@"===================================");
     NSLog(@"Game Title: %@", _gameTitle);
     NSLog(@"Game Platform: %@", _platform);
     NSLog(@"Game Rating: %i", _gameRating);

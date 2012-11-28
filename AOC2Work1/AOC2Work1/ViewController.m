@@ -39,7 +39,7 @@
                 
                 [titleLabel setText:[funIOSGame gameTitle]];
                 [platformLabel setText:[NSString stringWithFormat:@"Rating: %@",[funIOSGame platform]]];
-                [ratingLabel setText:[NSString stringWithFormat:@"Rating: %i",rating]];
+                [ratingLabel setText:[NSString stringWithFormat:@"Calculated Rating: %i",rating]];
             }
             break;
         }
@@ -51,7 +51,7 @@
                 
                 [titleLabel setText:[notSoFunAndroidGame gameTitle]];
                 [platformLabel setText:[NSString stringWithFormat:@"Rating: %@",[notSoFunAndroidGame platform]]];
-                [ratingLabel setText:[NSString stringWithFormat:@"Rating: %i",rating]];
+                [ratingLabel setText:[NSString stringWithFormat:@"Calculated Rating: %i",rating]];
             }
             break;
         }
@@ -63,7 +63,7 @@
                 
                 [titleLabel setText:[greatMacGame gameTitle]];
                 [platformLabel setText:[NSString stringWithFormat:@"Rating: %@",[greatMacGame platform]]];
-                [ratingLabel setText:[NSString stringWithFormat:@"Rating: %i",rating]];
+                [ratingLabel setText:[NSString stringWithFormat:@"Calculated Rating: %i",rating]];
             }
             break;
         }

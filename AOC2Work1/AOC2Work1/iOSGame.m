@@ -25,9 +25,12 @@
 }
 
 -(NSInteger)calculateGameAwesomenessWithType:(NSInteger)type gameTitle:(NSString *)title gameRating:(NSInteger)rating {
-    NSLog(@"iOS Version: %f", _iOSVersion);
-    NSLog(@"Uses accelerometer? %@", (_usesAccelerometer) ? @"YES" : @"NO");
-    return rating;
+    NSInteger ratingToReturn;
+    ratingToReturn = [title length] + [self iOSVersion] + rating;
+    ratingToReturn += ([self usesAccelerometer]) ? 1 : 0;
+    ratingToReturn += 50; // Because the platform is iOS :P
+    
+    return ratingToReturn;
 }
 
 @end

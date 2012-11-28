@@ -24,10 +24,12 @@
     return self;
 }
 
--(NSInteger)calculateGameAwesomenessWithType:(NSInteger)type gameTitle:(NSString *)title gameRating:(NSInteger)rating {
-    NSLog(@"Android Version: %f", _androidVersion);
-    NSLog(@"Uses accelerometer? %@", (_doesItWork) ? @"YES" : @"NO");
-    return rating;
+-(NSInteger)calculateGameAwesomenessWithType:(NSInteger)type gameTitle:(NSString *)title gameRating:(NSInteger)rating {    
+    NSInteger ratingToReturn;
+    ratingToReturn = [title length] + [self androidVersion] + rating;
+    ratingToReturn += ([self doesItWork]) ? 1 : 0;
+    
+    return ratingToReturn;
 }
 
 @end
