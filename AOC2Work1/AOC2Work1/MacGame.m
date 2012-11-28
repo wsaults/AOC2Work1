@@ -15,9 +15,8 @@
     self = [super init];
     if (self != nil) {
         [self setGameTitle:@"Angry Birds"];
+        [self setPlatform:@"Mac"];
         [self setGameRating:5];
-        [self setNumberOfYourFriendsThatOwnThisGame:2];
-        [self setIsMultiPlayer:NO];
         [self setOperatingSystem:10.8f];
         [self setIsFromAppStore:YES];
         
@@ -25,10 +24,10 @@
     return self;
 }
 
--(void)calculateGameAwesomeness {
-    [super calculateGameAwesomeness];
+-(NSInteger)calculateGameAwesomenessWithType:(NSInteger)type gameTitle:(NSString *)title gameRating:(NSInteger)rating {
     NSLog(@"OS: %f", _operatingSystem);
     NSLog(@"Downloaded from app store? %@", (_isFromAppStore) ? @"YES" : @"NO");
+    return rating;
 }
 
 @end

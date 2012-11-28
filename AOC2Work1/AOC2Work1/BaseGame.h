@@ -20,11 +20,10 @@ typedef enum {
 // Strong = A strong reference to this object on the heap.
 // A strong reference tells the system that I need this object and it should hang around until im done with it.
 @property (nonatomic, strong) NSString *gameTitle;
+@property (nonatomic, strong) NSString *platform;
 // These don't need a strong reference since they are not objects.
 @property (nonatomic) NSInteger gameRating;
-@property (nonatomic) NSInteger numberOfYourFriendsThatOwnThisGame;
-@property (nonatomic) BOOL isMultiPlayer;
 
--(void)calculateGameAwesomeness;
+-(NSInteger)calculateGameAwesomenessWithType:(NSInteger)type gameTitle:(NSString *)title gameRating:(NSInteger)rating;
 
 @end

@@ -16,19 +16,18 @@
     self = [super init];
     if (self != nil) {
         [self setGameTitle:nil];
+        [self setPlatform:nil];
         [self setGameRating:0];
-        [self setNumberOfYourFriendsThatOwnThisGame:0];
-        [self setIsMultiPlayer:NO];
     }
     return self;
 }
 
--(void)calculateGameAwesomeness {
+-(NSInteger)calculateGameAwesomenessWithType:(NSInteger)type gameTitle:(NSString *)title gameRating:(NSInteger)rating {
     NSLog(@"===================================");
     NSLog(@"Game Title: %@", _gameTitle);
+    NSLog(@"Game Platform: %@", _platform);
     NSLog(@"Game Rating: %i", _gameRating);
-    NSLog(@"Number of your friends that own this game: %i", _numberOfYourFriendsThatOwnThisGame);
-    NSLog(@"Is it multi player? %@", (_isMultiPlayer) ? @"YES" : @"NO");
+    return 0;
 }
 
 @end

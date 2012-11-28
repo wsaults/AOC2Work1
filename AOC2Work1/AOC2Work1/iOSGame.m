@@ -15,9 +15,8 @@
     self = [super init];
     if (self != nil) {
         [self setGameTitle:@"Bike Race"];
+        [self setPlatform:@"iOS"];
         [self setGameRating:5];
-        [self setNumberOfYourFriendsThatOwnThisGame:6];
-        [self setIsMultiPlayer:YES];
         [self setIOSVersion:6.0f];
         [self setUsesAccelerometer:YES];
         
@@ -25,10 +24,10 @@
     return self;
 }
 
--(void)calculateGameAwesomeness {
-    [super calculateGameAwesomeness];
+-(NSInteger)calculateGameAwesomenessWithType:(NSInteger)type gameTitle:(NSString *)title gameRating:(NSInteger)rating {
     NSLog(@"iOS Version: %f", _iOSVersion);
     NSLog(@"Uses accelerometer? %@", (_usesAccelerometer) ? @"YES" : @"NO");
+    return rating;
 }
 
 @end

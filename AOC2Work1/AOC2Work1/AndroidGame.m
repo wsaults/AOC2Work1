@@ -15,9 +15,8 @@
     self = [super init];
     if (self != nil) {
         [self setGameTitle:@"Snake"];
+        [self setPlatform:@"Android"];
         [self setGameRating:1];
-        [self setNumberOfYourFriendsThatOwnThisGame:0];
-        [self setIsMultiPlayer:NO];
         [self setAndroidVersion:8.0f];
         [self setDoesItWork:NO];
         
@@ -25,10 +24,10 @@
     return self;
 }
 
--(void)calculateGameAwesomeness {
-    [super calculateGameAwesomeness];
+-(NSInteger)calculateGameAwesomenessWithType:(NSInteger)type gameTitle:(NSString *)title gameRating:(NSInteger)rating {
     NSLog(@"Android Version: %f", _androidVersion);
     NSLog(@"Uses accelerometer? %@", (_doesItWork) ? @"YES" : @"NO");
+    return rating;
 }
 
 @end
