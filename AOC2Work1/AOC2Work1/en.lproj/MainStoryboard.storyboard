@@ -47,17 +47,33 @@
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Created by: Will Saults" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Axi-DK-gUm">
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="AOC2 1212" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="epf-c4-3bZ">
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Axi-DK-gUm" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="0Ee-df-Vkb"/>
                                     <constraint firstAttribute="trailing" secondItem="iIQ-8w-XJ4" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="1mY-xI-fuW"/>
                                     <constraint firstItem="o52-7T-8nw" firstAttribute="leading" secondItem="tPo-aq-bcq" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="2HU-A0-gwH"/>
+                                    <constraint firstItem="epf-c4-3bZ" firstAttribute="leading" secondItem="tPo-aq-bcq" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="5UP-TT-kRh"/>
                                     <constraint firstItem="etQ-WV-XPu" firstAttribute="top" secondItem="775-NG-WNR" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="6Ni-Xs-4J5"/>
+                                    <constraint firstAttribute="trailing" secondItem="epf-c4-3bZ" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="6iB-Fg-hzk"/>
                                     <constraint firstItem="775-NG-WNR" firstAttribute="centerX" secondItem="etQ-WV-XPu" secondAttribute="centerX" type="default" id="AdN-bd-Ze2"/>
                                     <constraint firstItem="iIQ-8w-XJ4" firstAttribute="top" secondItem="o52-7T-8nw" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="EMh-pK-YGp"/>
                                     <constraint firstAttribute="trailing" secondItem="o52-7T-8nw" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="ETE-Hb-AAo"/>
                                     <constraint firstItem="By5-U3-ixP" firstAttribute="top" secondItem="tPo-aq-bcq" secondAttribute="top" constant="20" symbolic="YES" type="default" id="Faw-kD-mb7"/>
+                                    <constraint firstAttribute="bottom" secondItem="Axi-DK-gUm" secondAttribute="bottom" constant="42" id="G7D-MK-iZD"/>
+                                    <constraint firstItem="Axi-DK-gUm" firstAttribute="leading" secondItem="tPo-aq-bcq" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="LTp-Jl-vlY"/>
                                     <constraint firstItem="o52-7T-8nw" firstAttribute="top" secondItem="tPo-aq-bcq" secondAttribute="top" constant="83" id="NmV-k8-bhW"/>
+                                    <constraint firstAttribute="bottom" secondItem="epf-c4-3bZ" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="dfq-lH-5RC"/>
                                     <constraint firstAttribute="trailing" secondItem="By5-U3-ixP" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="eSk-6z-0zp"/>
                                     <constraint firstAttribute="trailing" secondItem="etQ-WV-XPu" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="kAf-Nl-lzt"/>
                                     <constraint firstItem="By5-U3-ixP" firstAttribute="leading" secondItem="tPo-aq-bcq" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="mHs-LI-ca3"/>
