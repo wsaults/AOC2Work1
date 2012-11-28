@@ -10,4 +10,7 @@
 
 @interface MacGame : BaseGame
 
+@property (nonatomic) double operatingSystem;
+@property (nonatomic) BOOL isFromAppStore;
+
 @end
